@@ -1,0 +1,49 @@
+#include <iostream>
+using namespace std;
+
+// 排序函数声明（省略实现）
+void printList(int arr[], int n);
+void heapsort(int arr[], int n);
+void quicksort(int arr[], int n);
+void Mergesort(int arr[], int n);
+void insertionSort(int arr[], int n);
+void selectionSort(int arr[], int n);
+void shellSort(int arr[], int n);
+
+int main() {
+    int base[10] = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
+    ___ a[10], b[10], c[10], d[10], e[10], f[10];
+
+    for (int i = 0; i < 10; i++)
+        ___ = b[i] = c[i] = d[i] = e[i] = f[i] = base[i];
+
+    cout << "The List is:\n";
+    printList(base, 10);
+
+    cout << "Use heap_sort Method:\n";
+    heapsort(a, 10);
+    printList(a, 10);
+
+    cout << "Use quick_sort Method:\n";
+    quicksort(b, 10);
+    printList(b, 10);
+
+    cout << "Use Mergesort Method:\n";
+    Mergesort(c, 10);
+    printList(c, 10);
+
+    cout << "Use insertion_sort Method:\n";
+    insertionSort(d, 10);
+    printList(d, 10);
+
+    cout << "Use selection_sort Method:\n";
+    selectionSort(e, 10);
+    printList(e, 10);
+
+    cout << "Use shell_sort Method:\n";
+    shellSort(f, 10);
+    printList(f, 10);
+
+    system("pause");
+    return 0;
+}
